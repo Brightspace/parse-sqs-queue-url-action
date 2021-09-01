@@ -1,0 +1,19 @@
+name: Parse SQS Queue Url
+description: Parses an SQS queue url.
+
+inputs:
+  sqs-queue-url:
+    description: The sqs queue url.
+    required: true
+
+outputs:
+  aws-account-id:
+    description: The AWS account which owns the queue.
+  aws-region:
+    description: The AWS region where the queue resides.
+  sqs-queue-name:
+    description: The name of the queue.
+
+runs:
+  using: node12
+  main: dist/index.js

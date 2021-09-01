@@ -1,0 +1,36 @@
+{
+  "name": "parse-sqs-queue-url-action",
+  "version": "1.0.0",
+  "description": "GitHub Action for parsing SQS queue url.",
+  "main": "index.js",
+  "private": true,
+  "scripts": {
+    "lint": "eslint .",
+    "prepare": "ncc build index.js -o dist --source-map --license licenses.txt",
+    "all": "npm run lint && npm run prepare"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Brightpsace/parse-sqs-queue-url-action.git"
+  },
+  "keywords": [
+    "GitHub",
+    "Actions",
+    "JavaScript",
+    "SQS"
+  ],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Brightpsace/parse-sqs-queue-url-action/issues"
+  },
+  "homepage": "https://github.com/Brightpsace/parse-sqs-queue-url-action#readme",
+  "dependencies": {
+    "@actions/core": "^1.5.0"
+  },
+  "devDependencies": {
+    "@vercel/ncc": "^0.30.0",
+    "eslint": "^7.32.0",
+    "jest": "^27.1.0"
+  }
+}
