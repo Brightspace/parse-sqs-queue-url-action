@@ -11,14 +11,14 @@ jobs:
   units:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v2
+    - uses: Brightspace/third-party-actions@actions/checkout
     - run: npm ci
 
   # test action works running from the graph
   test:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v2
+    - uses: Brightspace/third-party-actions@actions/checkout
     - id: parse
       uses: ./
       with:
