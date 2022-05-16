@@ -26,7 +26,7 @@
   },
   "homepage": "https://github.com/Brightpsace/parse-sqs-queue-url-action#readme",
   "dependencies": {
-    "@actions/core": "^1.5.0"
+    "@actions/core": "^1.8.2"
   },
   "devDependencies": {
     "@vercel/ncc": "^0.30.0",
