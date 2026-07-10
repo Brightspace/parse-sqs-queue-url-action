@@ -12,6 +12,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: Brightspace/third-party-actions@actions/checkout
+    - uses: Brightspace/setup-node@main
+      with:
+        d2l-registry-token: ${{ secrets.D2L_PACKAGE_REGISTRY_AUTH_TOKEN }}
     - run: npm ci
 
   # test action works running from the graph
